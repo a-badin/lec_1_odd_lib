@@ -4,3 +4,4 @@ project(adv_cpp)
 
 add_subdirectory(odd_lib)
 add_subdirectory(ipc)
+add_subdirectory(movable_function)
