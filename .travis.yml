@@ -7,7 +7,6 @@ install:
  - sudo apt-get update
 # - sudo apt-get install --yes valgrind
  - sudo apt-get install --yes libgtest-dev
- - dpkg -L libgtest-dev
 # - sudo apt-get install --yes cmake
 # - sudo apt-get install --yes cppcheck
 # - sudo apt-get install --yes gcovr
@@ -22,3 +21,6 @@ jobs:
  - stage: Linters
    name: CppLint
    script: echo 4
+   
+cache:
+ apt: true
