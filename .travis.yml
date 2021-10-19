@@ -4,14 +4,15 @@ language: cpp
 
 install:
  - echo install_step
-# - sudo apt-get update
+ - sudo apt-get update
 # - sudo apt-get install --yes valgrind
-# - sudo apt-get install --yes libgtest-dev cmake
+ - sudo apt-get install --yes libgtest-dev
+ - dpkg -L libgtest-dev
 # - sudo apt-get install --yes cmake
 # - sudo apt-get install --yes cppcheck
 # - sudo apt-get install --yes gcovr
 jobs:
- - stage: test
+ - stage: Test
    script: echo 1
    name: Tests
  - script: echo 2
