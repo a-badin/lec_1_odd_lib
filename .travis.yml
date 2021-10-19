@@ -1,13 +1,15 @@
 os: linux
 dist: focal
 language: cpp
+
 install:
- - sudo apt-get update
+ - echo install_step
+# - sudo apt-get update
 # - sudo apt-get install --yes valgrind
- - sudo apt-get install --yes libgtest-dev cmake
+# - sudo apt-get install --yes libgtest-dev cmake
 # - sudo apt-get install --yes cmake
 # - sudo apt-get install --yes cppcheck
 # - sudo apt-get install --yes gcovr
-script:
- - cmake -B build
- - make -C build
+jobs:
+ - script: echo 1
+ - script: echo 2
