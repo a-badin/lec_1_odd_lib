@@ -13,4 +13,11 @@ install:
 jobs:
  - stage: test
    script: echo 1
+   name: Tests
  - script: echo 2
+   name: Coverage
+ - script: echo 3
+   name: Sanitaizers
+ - stage: Linters
+   name: CppLint
+   script: echo 4
