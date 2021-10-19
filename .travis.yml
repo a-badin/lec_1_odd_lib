@@ -11,5 +11,6 @@ install:
 # - sudo apt-get install --yes cppcheck
 # - sudo apt-get install --yes gcovr
 jobs:
- - script: echo 1
+ - stage: test
+   script: echo 1
  - script: echo 2
